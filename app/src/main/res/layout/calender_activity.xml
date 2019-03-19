@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="55dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:descendantFocusability="blocksDescendants"
+            android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:fontFamily="@font/abeezee"
+            android:text="Calender"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2019"
+            android:id="@+id/year_txt"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/abeezee"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:textSize="13sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="May,12 "
+            android:id="@+id/month_date"
+            android:fontFamily="@font/abeezee"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="10dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            />
+    </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/cal"
+            android:layout_below="@id/app_bar"
+       >
+            <com.haibin.calendarview.CalendarLayout
+                android:id="@+id/calendarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:descendantFocusability="blocksDescendants"
+                android:background="#fff"
+                android:orientation="vertical"
+                app:calendar_show_mode="both_month_week_view"
+                app:calendar_content_view_id="@+id/recyclerView">
+
+                <com.haibin.calendarview.CalendarView
+                    android:id="@+id/calendarView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    app:calendar_padding="10dp"
+                    app:day_text_size="15sp"
+                    app:current_month_lunar_text_color="#CFCFCF"
+                    app:current_month_text_color="#333333"
+                    app:max_year="2028"
+                    app:current_day_lunar_text_color="@color/white"
+                    app:scheme_lunar_text_color="@color/white"
+                    app:min_year="2004"
+                    app:month_view_show_mode="mode_fix"
+                    app:other_month_lunar_text_color="#e1e1e1"
+                    app:other_month_text_color="#e1e1e1"
+                    app:scheme_text_color="@color/text_grey"
+                    app:scheme_theme_color="@color/white"
+                    app:selected_lunar_text_color="#fff"
+                    app:selected_text_color="@color/black"
+                    app:selected_theme_color="#EBEBEB"
+                    app:week_background="@color/white"
+                    app:week_start_with="sun"
+                    app:week_text_color="#000000"
+                    app:month_view="com.mazealpha01.abhishekgowda.todo.custom.CustomMonthView"
+                    app:week_bar_view="com.mazealpha01.abhishekgowda.todo.custom.CustomWeekBar"
+                    app:year_view_day_text_color="#333333"
+                    app:year_view_day_text_size="9sp"
+                    app:year_view_month_text_color="@color/white"
+                    app:year_view_month_text_size="20sp"
+                    app:year_view_scheme_color="@color/white"/>
+
+
+
+
+                　
+            </com.haibin.calendarview.CalendarLayout>
+
+        </RelativeLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_below="@id/cal"
+                android:layout_height="match_parent"
+
+                />
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <include layout="@layout/bottom_navigation_view" />
+
+</RelativeLayout>

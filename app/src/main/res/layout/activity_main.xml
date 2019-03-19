@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:background="@color/white"
+    >
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_marginBottom="55dp"
+            android:layout_height="match_parent"
+            android:descendantFocusability="blocksDescendants">
+        <RelativeLayout
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:elevation="4dp"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="18dp"
+                android:fontFamily="@font/abeezee"
+                android:text="Redolent"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <View
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:outlineProvider="bounds"
+                android:id="@+id/addtask"
+                android:background="@drawable/drawable_button"
+             />
+
+            <ImageView
+                android:id="@+id/ic_settings"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:visibility="gone"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:padding="1dp"
+                android:src="@drawable/ic_settings" />
+
+
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/selector"
+                android:elevation="4dp"
+                android:layout_below="@+id/app_bar">
+                <RelativeLayout
+                    android:layout_width="70dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/inbox_lay">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="Inbox"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:id="@+id/inbox"
+                    android:elevation="2dp"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/abeezee"/>
+                    <View
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:visibility="visible"
+                        android:id="@+id/v_inbox"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/selector_draw"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/today_lay"
+                    android:layout_toEndOf="@+id/inbox_lay">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="Today"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:id="@+id/today"
+                        android:elevation="2dp"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/abeezee"/>
+                    <View
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:visibility="invisible"
+                        android:id="@+id/v_tdy"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/selector_draw"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tommorow_lay"
+                    android:layout_toEndOf="@id/today_lay">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="Tommorow"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:id="@+id/tommorow"
+                        android:elevation="2dp"
+                        android:layout_centerInParent="true"
+
+                        android:fontFamily="@font/abeezee"/>
+                    <View
+                        android:layout_width="90dp"
+                        android:layout_height="30dp"
+                        android:visibility="invisible"
+                        android:id="@+id/v_tmr"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/selector_draw"/>
+                </RelativeLayout>
+            </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/selector"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/list_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="0dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                </androidx.recyclerview.widget.RecyclerView>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+        </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:fontFamily="@font/abeezee"
+        android:text="No Tasks"
+        android:id="@+id/ntask1"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:visibility="gone"
+        android:fontFamily="@font/abeezee"
+        android:gravity="center"
+        android:text="You can create new task \n using the + icon"
+        android:id="@+id/ntask2"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/ntask1"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+
+
+    <include layout="@layout/bottom_navigation_view"></include>
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sleep Time"
+        android:fontFamily="@font/abeezee"
+        android:textSize="15sp"
+        android:id="@+id/title"
+        android:textColor="@color/black"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="12dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="12dp"
+        android:textColor="@color/text_grey"
+        android:visibility="visible"
+        android:id="@+id/time"
+        android:text="9:00 pm"
+        android:layout_centerVertical="true" />
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:padding="3dp"
+        android:background="@drawable/ic_cancel"
+        android:layout_toStartOf="@+id/time"
+        android:id="@+id/cancel_sleep_notitfication"
+        android:layout_marginEnd="16dp"
+        android:layout_centerVertical="true"
+        />
+    <Button
+        android:layout_width="80dp"
+        android:padding="5dp"
+        android:layout_height="39dp"
+        android:textColor="@color/white"
+        android:text="done"
+        android:layout_marginEnd="10dp"
+        android:elevation="2dp"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:textAllCaps="false"
+        android:layout_alignParentEnd="true"
+        android:layout_toStartOf="@+id/time"
+        android:id="@+id/set"
+        android:background="@drawable/btn_square"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="0.3dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="0dp"
+        android:background="#dedede"
+        android:layout_marginBottom="0dp"
+        android:id="@+id/boarder"/>
+
+</RelativeLayout>

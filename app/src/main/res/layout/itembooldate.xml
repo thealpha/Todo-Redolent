@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show date in task layout"
+        android:fontFamily="@font/abeezee"
+        android:layout_marginTop="17dp"
+        android:textSize="15sp"
+        android:id="@+id/title"
+        android:textColor="@color/black"
+        android:layout_marginStart="12dp"/>
+
+    <ImageView
+        android:layout_width="22dp"
+        android:id="@+id/infodte"
+        android:layout_height="22dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/ic_info"
+        android:layout_toStartOf="@id/switch_showdate"
+        android:layout_marginTop="17dp"/>
+
+    <com.suke.widget.SwitchButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/switch_showdate"
+        app:sb_checked_color="@color/light_green"
+        android:layout_marginTop="10dp"
+        android:text=""/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/abeezee"
+        android:layout_marginStart="12dp"
+        android:id="@+id/infotxt_dte"
+        android:layout_below="@+id/switch_showdate"
+        android:layout_marginTop="1dp"
+        android:textSize="12sp"
+        android:visibility="gone"
+        android:text="Shows date with time in task layout"/>
+
+</RelativeLayout>

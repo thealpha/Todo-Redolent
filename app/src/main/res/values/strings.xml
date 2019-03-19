@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Redolent</string>
+    <string name="appwidget_text">mazealpha01</string>
+    <string name="configure">Configure</string>
+    <string name="add_widget">Add widget</string>
+    <string name="gotit">GOT IT</string>
+    <string name="close">CLOSE</string>
+    <string name="walkthrough_one">Welcome to\nRedolent</string>
+    <string name="walkthrough_two">Never forget\nA thing</string>
+    <string name="walkthrough_three">Highlight your\ntask with Colour tags</string>
+    <string name="walkthrough_four">Enjoy with\nPremium Features </string>
+</resources>

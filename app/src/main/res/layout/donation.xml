@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="340dp"
+    android:id="@+id/lay"
+    android:layout_marginBottom="5dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginTop="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:id="@+id/donate_lay"
+        android:background="@drawable/btn_square">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="buy me a coffee :)"
+            android:fontFamily="@font/abeezee"
+            android:textSize="15sp"
+            android:id="@+id/id_donate"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="12dp"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_below="@id/donate_lay"
+        android:textStyle="normal"
+        android:background="@drawable/back_txt"
+        android:layout_marginTop="5dp"
+        android:id="@+id/info"
+        android:textColor="@color/text_grey"
+        android:padding="5dp"
+        android:gravity="center"
+        android:text="I love making apps and i want to make it free but unfortunately this is my only way of income and i need to pay my rent. so if you bros like the app and what me to continue making awesome apps. plz donate me (Any amount your willing to donate). And im going to create list of supporters names and display with in my app"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/info"
+        android:backgroundTint="@color/blue"
+        android:id="@+id/paypal_btn"
+        android:text="Paypal"
+        android:fontFamily="@font/abeezee"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:rippleColor="@color/white"
+        />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/paypal_btn"
+        android:backgroundTint="@color/white"
+        android:elevation="5dp"
+        android:text="G pay"
+        android:fontFamily="@font/abeezee"
+        android:id="@+id/google_pay"
+        android:textAllCaps="false"
+        android:textColor="@color/blue"
+        app:rippleColor="@color/white"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/google_pay"
+        android:backgroundTint="@color/light_purple"
+        android:elevation="5dp"
+        android:text="Discord (stay in touch)"
+        android:id="@+id/discord_btn"
+        android:textAllCaps="false"
+        android:fontFamily="@font/abeezee"
+        android:textColor="@color/white"
+        app:rippleColor="@color/white"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/paypal_btn"
+        android:textColor="@color/blue"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toEndOf="@+id/google_pay"
+        android:fontFamily="@font/abeezee"
+        android:padding="5dp"
+        android:text="Google pay UPI ID : abhishekgowdaabhiz46@oksbi" />
+
+
+    <View
+        android:id="@+id/boarder"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="666dp"
+        android:layout_marginBottom="0dp"
+        android:background="#dedede" />
+</RelativeLayout>

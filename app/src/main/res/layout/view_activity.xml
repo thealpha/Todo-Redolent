@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/light_purple"
+    android:id="@+id/relativelay">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants" >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:padding="3dp"
+                android:id="@+id/cancle_review"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_close"
+                />
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/task_lay"
+    android:layout_marginTop="60dp"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Task"
+        android:id="@+id/Task_name_default"
+
+        android:fontFamily="@font/abeezee"
+        android:layout_marginStart="11dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Bring dog to home with Michale"
+        android:text=""
+
+        android:layout_below="@+id/Task_name_default"
+        android:id="@+id/task_text"
+        android:layout_marginTop="3dp"
+        android:textColorHint="@color/white"
+        android:layout_marginStart="12dp"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        />
+
+</RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/note_lay"
+    android:layout_below="@id/task_lay"
+    android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Note"
+                android:id="@+id/note_txt_default"
+
+                android:fontFamily="@font/abeezee"
+                android:layout_marginStart="11dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="You haven't add any note to this task"
+                android:layout_below="@id/note_txt_default"
+                android:id="@+id/note_text"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="10dp"
+                android:textColorHint="@color/white"
+                android:layout_marginStart="12dp"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                />
+
+</RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/time_lay"
+                android:layout_below="@id/note_lay"
+               android:layout_marginTop="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Time"
+                    android:id="@+id/time_def"
+
+                    android:fontFamily="@font/abeezee"
+                    android:layout_marginStart="11dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="25 December - 2:00 pm"
+                    android:text=""
+                    android:layout_below="@id/time_def"
+                    android:id="@+id/timetext"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="10dp"
+                    android:textColorHint="@color/white"
+                    android:layout_marginStart="12dp"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    />
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iteams_deafault"
+                android:layout_below="@+id/time_lay"
+                android:layout_marginTop="19dp"
+                android:fontFamily="@font/abeezee"
+                android:textColorHint="@color/white"
+                android:textStyle="bold"
+                android:text="Items"
+                android:layout_marginStart="11dp"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/listviewiteam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iteams_deafault"
+                android:layout_marginTop="19dp"
+                android:layout_marginBottom="60dp"
+                >
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </RelativeLayout>
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:id="@+id/additeams"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:elevation="5dp"
+        android:layout_marginBottom="-1dp"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+
+            android:paddingStart="25dp"
+            android:layout_toStartOf="@+id/add_iteam_done"
+            android:layout_marginEnd="15dp"
+            android:fontFamily="@font/abeezee"
+            android:hint="Add item here"
+            android:id="@+id/iteam_gettext"
+            android:background="#02ffffff"
+            android:textSize="16sp"
+            android:textColor="@color/text_grey" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/add_iteam_done"
+            android:src="@drawable/ic_cancel"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="12dp"
+            />
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:elevation="5dp"
+        android:id="@+id/addtask"
+        android:src="@drawable/add_item_button"
+        />
+
+
+
+</RelativeLayout>
+
+
+
+
+
+

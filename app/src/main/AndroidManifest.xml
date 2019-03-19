@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mazealpha01.abhishekgowda.todo">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logoupdate"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logoupdate"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <receiver android:name=".Widget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info" />
+        </receiver>
+
+        <activity android:name=".MainActivity">
+
+        </activity>
+        <activity
+            android:name=".AddTaskActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".CalenderActivity" />
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".Intro.IntroActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ViewActivity"
+            android:windowSoftInputMode="stateHidden" />
+
+        <receiver android:name=".Extra.ReminderManager" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    <!--    <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713"/>-->
+
+        <service
+            android:name=".Extra.WidgetService"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+    </application>
+
+</manifest>

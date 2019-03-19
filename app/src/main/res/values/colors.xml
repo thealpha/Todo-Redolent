@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="black">#030303</color>
+    <color name="white">#ffff</color>
+    <color name="pink">#D81B60</color>
+    <color name="dim_white">#F5F5F5</color>
+    <color name="text_grey">#B7B7B7</color>
+    <color name="dark_pink">#a8316e</color>
+    <color name="sky_blue">#009cdf</color>
+    <color name="orange">#cd6200</color>
+    <color name="green">#008493</color>
+    <color name="dark_blue">#012c81</color>
+    <color name="blue">#2867eb</color>
+    <color name="pinkligh">#e16e96</color>
+    <color name="yellow">#e4ab10</color>
+    <color name="red">#d51b46</color>
+    <color name="purple">#7818c6</color>
+    <color name="light_purple">#666DE2</color>
+    <color name="light_green">#6dd5c9</color>
+    <color name="light_orange">#fda88c</color>
+    <color name="light_purplr">#ae90d4</color>
+    <color name="transpernt">#6FFFFFFF</color>
+
+
+    <array name="rainbow">
+        <item>@color/blue</item>
+        <item>@color/orange</item>
+        <item>@color/green</item>
+        <item>@color/light_green</item>
+        <item>@color/yellow</item>
+        <item>@color/pinkligh</item>
+        <item>@color/red</item>
+        <item>@color/purple</item>
+        <item>@color/light_purple</item>
+        <item>@color/light_orange</item>
+        <item>@color/sky_blue</item>
+
+    </array>
+
+</resources>

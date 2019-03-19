@@ -1,0 +1,201 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/light_purple</item>
+        <item name="colorPrimaryDark">@color/light_purple</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowActivityTransitions">true</item>
+
+    </style>
+
+
+
+    /// sky blue theme
+    <style name="SkyBlue" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorAccent">@color/sky_blue</item>
+        <item name="colorPrimary">@color/sky_blue</item>
+        <item name="colorPrimaryDark">@color/sky_blue</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowActivityTransitions">true</item>
+
+
+
+    </style>
+
+    ///  blue theme
+    <style name="DarkBlue" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorAccent">@color/blue</item>
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryDark">@color/blue</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowActivityTransitions">true</item>
+
+
+    </style>
+
+    ///  brown theme
+    <style name="Brown" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorAccent">@color/orange</item>
+        <item name="colorPrimary">@color/orange</item>
+        <item name="colorPrimaryDark">@color/orange</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowActivityTransitions">true</item>
+
+
+    </style>
+
+    ///  green theme
+    <style name="Green" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorAccent">@color/green</item>
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorPrimaryDark">@color/green</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowActivityTransitions">true</item>
+
+
+    </style>
+
+    ///  lightgreen theme
+    <style name="LightGreen" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorAccent">@color/light_green</item>
+        <item name="colorPrimary">@color/light_green</item>
+        <item name="colorPrimaryDark">@color/light_green</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowActivityTransitions">true</item>
+
+
+    </style>
+
+    <style name="Yellow" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorAccent">@color/yellow</item>
+        <item name="colorPrimary">@color/yellow</item>
+        <item name="colorPrimaryDark">@color/yellow</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowActivityTransitions">true</item>
+
+
+    </style>
+
+    ///  pinkligh theme
+    <style name="Pink" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorAccent">@color/pinkligh</item>
+        <item name="colorPrimary">@color/pinkligh</item>
+        <item name="colorPrimaryDark">@color/pinkligh</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowActivityTransitions">true</item>
+
+    </style>
+
+    ///  pinkligh theme
+    <style name="Red" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorAccent">@color/red</item>
+        <item name="colorPrimary">@color/red</item>
+        <item name="colorPrimaryDark">@color/red</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowActivityTransitions">true</item>
+
+    </style>
+
+    ///  pinkligh theme
+    <style name="Purple" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorAccent">@color/purple</item>
+        <item name="colorPrimary">@color/purple</item>
+        <item name="colorPrimaryDark">@color/purple</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowActivityTransitions">true</item>
+
+    </style>
+
+    <style name="LightPurple" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorAccent">@color/light_purple</item>
+        <item name="colorPrimary">@color/light_purple</item>
+        <item name="colorPrimaryDark">@color/light_purple</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowActivityTransitions">true</item>
+
+    </style>
+
+    <style name="LightOrange" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorAccent">@color/light_orange</item>
+        <item name="colorPrimary">@color/light_orange</item>
+        <item name="colorPrimaryDark">@color/light_orange</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowActivityTransitions">true</item>
+
+    </style>
+
+    <style name="CustomStyle.LightTheme" parent="Theme.AppCompat">
+
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="colorPrimary">@color/red</item>
+        <item name="colorPrimaryDark">@color/red</item>
+
+
+    </style>
+
+
+    <style name="statusBarStyle" parent="@android:style/Theme.DeviceDefault.Light">
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="Theme.AppCompat.Translucent" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:background">#33000000</item> <!-- Or any transparency or color you need -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+    </style>
+
+    <style name="Mint" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/red</item>
+        <item name="colorPrimaryDark">@color/red</item>
+        <item name="colorAccent">@color/red</item>
+    </style>
+    <style name="abeezee" parent="@android:style/TextAppearance.Small">
+        <item name="android:fontFamily">@font/abeezee</item>
+    </style>
+
+</resources>

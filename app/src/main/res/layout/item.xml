@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/white">
+        <View
+            android:layout_width="7dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:id="@+id/tag_item"
+            android:background="@color/pinkligh">
+        </View>
+
+        <TextView
+            android:id="@+id/task_name_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:fontFamily="sans-serif-medium"
+            android:maxLines="2"
+            android:layout_marginEnd="18dp"
+            android:layout_toStartOf="@+id/bin_item"
+            android:layout_toEndOf="@id/tag_item"
+            android:text="Go llo need to work for work work work for work"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/ic_garbage"
+            android:id="@+id/bin_item"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="50dp"/>
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:id="@+id/checked_item"
+            android:visibility="invisible"
+            android:src="@drawable/ic_checked"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="15dp"/>
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:id="@+id/unchecked_item"
+            android:src="@drawable/ic_unchecked"
+            android:visibility="visible"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="15dp"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
