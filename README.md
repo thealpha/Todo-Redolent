@@ -11,9 +11,9 @@ This is simple beautiful todolist app.
 
 ![s-4](https://user-images.githubusercontent.com/36503762/54601864-233f9580-4a66-11e9-9a40-81d64ac350ad.png)
 
-![s-5](https://user-images.githubusercontent.com/36503762/54601901-33f00b80-4a66-11e9-9683-a79fcea687b8.png)
+![s5](https://user-images.githubusercontent.com/36503762/54603393-35bbce00-4a6a-11e9-89cd-400d709e2f3a.png)
 
-![up6](https://user-images.githubusercontent.com/36503762/54603393-35bbce00-4a6a-11e9-89cd-400d709e2f3a.png)
+![s-6](https://user-images.githubusercontent.com/36503762/54601957-5b46d880-4a66-11e9-937b-ba8798a85172.png)
 
 ![s-7](https://user-images.githubusercontent.com/36503762/54601925-44a08180-4a66-11e9-9785-f5da578e13fb.png)
 
