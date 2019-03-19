@@ -17,8 +17,11 @@ This is simple beautiful todolist app.
 
 ![s-7](https://user-images.githubusercontent.com/36503762/54601925-44a08180-4a66-11e9-9785-f5da578e13fb.png)
 
-### Check out the app. before downloading project.
-![google-play-badge](<a href='https://play.google.com/store/apps/details?id=com.mazealpha0102.abhishekgowda.todo&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>)
+## Install
+
+Check out the app before downloading project.
+
+<a href='https://play.google.com/store/apps/details?id=com.mazealpha0102.abhishekgowda.todo&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>
 
 ## Donation via paypal
 If you like this project and wanna help to create more free projects please consider donating (any amount you willing to donate)
