@@ -2,8 +2,8 @@
 This is Simple, beautiful Todo list app on github.
 
 # Screenshots
-![alt text](https://imgur.com/XxhTDzm)
-![alt text](https://imgur.com/B98vmjD)
+! [screenshot 1](https://imgur.com/XxhTDzm)
+![screenshot ](https://imgur.com/B98vmjD)
 ![alt text](https://imgur.com/qBB9cWq)
 ![alt text](https://imgur.com/OgeY8Mj)
 ![alt text](https://imgur.com/ax5tukc)
