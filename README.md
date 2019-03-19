@@ -1,5 +1,5 @@
 # Todo-Redolent 
-This is Simple, beautiful Todo list app on github.
+This is simple beautiful todolist app.
 
 ## Screenshots
 
@@ -17,8 +17,12 @@ This is Simple, beautiful Todo list app on github.
 
 ![s-7](https://user-images.githubusercontent.com/36503762/54601925-44a08180-4a66-11e9-9785-f5da578e13fb.png)
 
+### Check out the app. before downloading project.
+![google-play-badge](https://user-images.githubusercontent.com/36503762/54602269-356e0380-4a67-11e9-9720-dbd1a2dedd2c.png)
+
 ## Donation via paypal
 If you like this project and wanna help to create more free projects please consider donating (any amount you willing to donate)
+
 [![](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://paypal.me/Mazealpha?locale.x=en_GB)
 
 
